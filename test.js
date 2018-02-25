@@ -8,7 +8,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(5)
-      .add(5).ans();
+      .add(5);
 
     assert.equal(value, 11);
   });
@@ -18,7 +18,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(2)
-      .multiply(2).ans();
+      .multiply(2);
 
     assert.equal(value, 6);
   });
@@ -29,7 +29,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(5)
       .multiply(5)
-      .add(5).ans();
+      .add(5);
 
     assert.equal(value, 31);
   });
@@ -40,7 +40,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(2)
       .add(2)
-      .multiply(2).ans();
+      .multiply(2);
 
     assert.equal(value, 8);
   });
@@ -51,7 +51,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(2)
       .add(4)
-      .devide(4).ans();
+      .devide(4);
 
     assert.equal(value, 5);
   });
@@ -65,7 +65,7 @@ describe('SmartCalculator', () => {
       .add(4)
       .devide(4)
       .add(6)
-      .devide(3).ans();
+      .devide(3);
 
     assert.equal(value, 7);
   });
@@ -77,7 +77,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 3);
   });
@@ -94,7 +94,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .pow(2)
       .pow(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -9834551);
   });
@@ -113,7 +113,7 @@ describe('SmartCalculator', () => {
       .add(60)
       .subtract(8)
       .subtract(83)
-      .add(50).ans();
+      .add(50);
   
     assert.equal(value, -5210);
   });
@@ -132,7 +132,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(5)
       .subtract(56)
-      .add(36).ans();
+      .add(36);
   
     assert.equal(value, -8288);
   });
@@ -151,7 +151,7 @@ describe('SmartCalculator', () => {
       .add(81)
       .multiply(1)
       .pow(1)
-      .add(4).ans();
+      .add(4);
   
     assert.equal(value, -2590);
   });
@@ -166,7 +166,7 @@ describe('SmartCalculator', () => {
       .add(27)
       .pow(2)
       .pow(1)
-      .subtract(53).ans();
+      .subtract(53);
   
     assert.equal(value, 645);
   });
@@ -177,7 +177,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 2);
   });
@@ -191,7 +191,7 @@ describe('SmartCalculator', () => {
       .subtract(45)
       .multiply(1)
       .subtract(27)
-      .add(45).ans();
+      .add(45);
   
     assert.equal(value, -100);
   });
@@ -205,7 +205,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .add(100)
       .subtract(74)
-      .subtract(67).ans();
+      .subtract(67);
   
     assert.equal(value, -175);
   });
@@ -221,7 +221,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(5)
       .multiply(1)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 156);
   });
@@ -234,7 +234,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .multiply(1)
       .pow(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 81);
   });
@@ -244,7 +244,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(4);
 
     const value = calculator
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 4);
   });
@@ -258,7 +258,7 @@ describe('SmartCalculator', () => {
       .subtract(2)
       .multiply(1)
       .pow(2)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 47);
   });
@@ -274,7 +274,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .multiply(2)
       .multiply(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 16);
   });
@@ -287,7 +287,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .multiply(1)
       .add(95)
-      .subtract(96).ans();
+      .subtract(96);
   
     assert.equal(value, 0);
   });
@@ -305,7 +305,7 @@ describe('SmartCalculator', () => {
       .subtract(11)
       .multiply(1)
       .subtract(41)
-      .subtract(65).ans();
+      .subtract(65);
   
     assert.equal(value, -29);
   });
@@ -316,7 +316,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(73)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -66);
   });
@@ -328,7 +328,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .pow(1)
       .pow(2)
-      .add(97).ans();
+      .add(97);
   
     assert.equal(value, 102);
   });
@@ -339,7 +339,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 10);
   });
@@ -358,7 +358,7 @@ describe('SmartCalculator', () => {
       .subtract(1)
       .subtract(87)
       .pow(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -111);
   });
@@ -374,7 +374,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(18)
       .subtract(59)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -160);
   });
@@ -390,7 +390,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(46)
       .add(57)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 51);
   });
@@ -403,7 +403,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(73)
       .multiply(1)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 152);
   });
@@ -419,7 +419,7 @@ describe('SmartCalculator', () => {
       .subtract(49)
       .pow(1)
       .multiply(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -89);
   });
@@ -437,7 +437,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(39)
       .multiply(2)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 258);
   });
@@ -449,7 +449,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(1)
       .subtract(38)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -1440);
   });
@@ -459,7 +459,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(5);
 
     const value = calculator
-      .subtract(44).ans();
+      .subtract(44);
   
     assert.equal(value, -39);
   });
@@ -472,7 +472,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .pow(2)
       .add(82)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 16724);
   });
@@ -482,11 +482,10 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(2);
 
     const value = calculator
-      .add(9).ans();
+      .add(9);
   
     assert.equal(value, 11);
   });
-  
   it('36', () => {
   
     const calculator = new SmartCalculator(3);
@@ -495,7 +494,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(37)
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 40);
   });
@@ -510,7 +509,7 @@ describe('SmartCalculator', () => {
       .add(26)
       .add(73)
       .multiply(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 80);
   });
@@ -524,7 +523,7 @@ describe('SmartCalculator', () => {
       .add(45)
       .subtract(55)
       .add(47)
-      .add(48).ans();
+      .add(48);
   
     assert.equal(value, 95);
   });
@@ -538,7 +537,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .pow(2)
       .add(96)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 198);
   });
@@ -549,7 +548,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(52)
-      .add(15).ans();
+      .add(15);
   
     assert.equal(value, 76);
   });
@@ -566,7 +565,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .subtract(68)
       .pow(1)
-      .subtract(31).ans();
+      .subtract(31);
   
     assert.equal(value, -3671);
   });
@@ -582,7 +581,7 @@ describe('SmartCalculator', () => {
       .subtract(83)
       .add(23)
       .subtract(60)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -83);
   });
@@ -599,7 +598,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .pow(1)
       .subtract(65)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -249);
   });
@@ -609,7 +608,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(10);
 
     const value = calculator
-      .add(83).ans();
+      .add(83);
   
     assert.equal(value, 93);
   });
@@ -622,7 +621,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .subtract(25)
       .add(30)
-      .add(82).ans();
+      .add(82);
   
     assert.equal(value, 96);
   });
@@ -641,7 +640,7 @@ describe('SmartCalculator', () => {
       .add(31)
       .multiply(2)
       .multiply(2)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 147);
   });
@@ -653,7 +652,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(83)
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -76);
   });
@@ -663,7 +662,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(7);
 
     const value = calculator
-      .subtract(96).ans();
+      .subtract(96);
   
     assert.equal(value, -89);
   });
@@ -682,7 +681,7 @@ describe('SmartCalculator', () => {
       .subtract(95)
       .subtract(72)
       .multiply(2)
-      .subtract(77).ans();
+      .subtract(77);
   
     assert.equal(value, -227);
   });
@@ -697,7 +696,7 @@ describe('SmartCalculator', () => {
       .subtract(25)
       .multiply(1)
       .pow(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -57);
   });
@@ -707,7 +706,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(5);
 
     const value = calculator
-      .subtract(88).ans();
+      .subtract(88);
   
     assert.equal(value, -83);
   });
@@ -720,7 +719,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .subtract(93)
       .multiply(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -87);
   });
@@ -739,7 +738,7 @@ describe('SmartCalculator', () => {
       .subtract(93)
       .multiply(2)
       .add(61)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -1057);
   });
@@ -752,7 +751,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(66)
       .pow(1)
-      .add(98).ans();
+      .add(98);
   
     assert.equal(value, 172);
   });
@@ -767,7 +766,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(20)
       .multiply(2)
-      .subtract(64).ans();
+      .subtract(64);
   
     assert.equal(value, -86);
   });
@@ -784,7 +783,7 @@ describe('SmartCalculator', () => {
       .subtract(98)
       .add(77)
       .subtract(66)
-      .add(11).ans();
+      .add(11);
   
     assert.equal(value, -124);
   });
@@ -795,7 +794,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(2)
-      .add(89).ans();
+      .add(89);
   
     assert.equal(value, 109);
   });
@@ -808,7 +807,7 @@ describe('SmartCalculator', () => {
       .add(57)
       .subtract(93)
       .subtract(70)
-      .add(88).ans();
+      .add(88);
   
     assert.equal(value, -13);
   });
@@ -823,7 +822,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(60)
       .add(8)
-      .subtract(28).ans();
+      .subtract(28);
   
     assert.equal(value, -159);
   });
@@ -842,7 +841,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .pow(1)
       .subtract(89)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 522);
   });
@@ -857,7 +856,7 @@ describe('SmartCalculator', () => {
       .subtract(12)
       .multiply(1)
       .pow(2)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -15);
   });
@@ -868,7 +867,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(18)
-      .add(34).ans();
+      .add(34);
   
     assert.equal(value, 58);
   });
@@ -878,7 +877,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(1);
 
     const value = calculator
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 2);
   });
@@ -890,7 +889,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(1)
       .subtract(29)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -55);
   });
@@ -907,7 +906,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(1)
       .pow(2)
-      .subtract(60).ans();
+      .subtract(60);
   
     assert.equal(value, -75);
   });
@@ -919,7 +918,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(24)
       .add(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 33);
   });
@@ -936,7 +935,7 @@ describe('SmartCalculator', () => {
       .add(25)
       .subtract(90)
       .multiply(2)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -240);
   });
@@ -953,7 +952,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(97)
       .subtract(52)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -141);
   });
@@ -968,7 +967,7 @@ describe('SmartCalculator', () => {
       .subtract(83)
       .multiply(1)
       .pow(2)
-      .add(36).ans();
+      .add(36);
   
     assert.equal(value, 153);
   });
@@ -979,7 +978,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(84)
-      .subtract(88).ans();
+      .subtract(88);
   
     assert.equal(value, -168);
   });
@@ -997,7 +996,7 @@ describe('SmartCalculator', () => {
       .add(93)
       .add(67)
       .multiply(2)
-      .subtract(72).ans();
+      .subtract(72);
   
     assert.equal(value, 553);
   });
@@ -1016,7 +1015,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(74)
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -35);
   });
@@ -1030,7 +1029,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(97)
       .multiply(1)
-      .subtract(62).ans();
+      .subtract(62);
   
     assert.equal(value, -186);
   });
@@ -1042,7 +1041,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(10)
       .multiply(1)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -19);
   });
@@ -1059,7 +1058,7 @@ describe('SmartCalculator', () => {
       .add(48)
       .multiply(2)
       .pow(1)
-      .subtract(42).ans();
+      .subtract(42);
   
     assert.equal(value, -4);
   });
@@ -1078,7 +1077,7 @@ describe('SmartCalculator', () => {
       .add(96)
       .subtract(75)
       .add(49)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 2315);
   });
@@ -1097,7 +1096,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .multiply(1)
       .multiply(2)
-      .add(56).ans();
+      .add(56);
   
     assert.equal(value, -123);
   });
@@ -1116,7 +1115,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(50)
       .subtract(23)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -264);
   });
@@ -1130,7 +1129,7 @@ describe('SmartCalculator', () => {
       .subtract(36)
       .add(84)
       .add(99)
-      .add(71).ans();
+      .add(71);
   
     assert.equal(value, 226);
   });
@@ -1142,7 +1141,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .pow(1)
       .subtract(6)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -4);
   });
@@ -1159,7 +1158,7 @@ describe('SmartCalculator', () => {
       .subtract(57)
       .multiply(1)
       .pow(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -42);
   });
@@ -1170,7 +1169,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .subtract(70).ans();
+      .subtract(70);
   
     assert.equal(value, -61);
   });
@@ -1181,7 +1180,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 10);
   });
@@ -1192,7 +1191,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 8);
   });
@@ -1207,7 +1206,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(52)
       .subtract(64)
-      .add(84).ans();
+      .add(84);
   
     assert.equal(value, 2835);
   });
@@ -1222,7 +1221,7 @@ describe('SmartCalculator', () => {
       .subtract(90)
       .multiply(1)
       .pow(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 6471);
   });
@@ -1237,7 +1236,7 @@ describe('SmartCalculator', () => {
       .add(84)
       .multiply(1)
       .subtract(96)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -30);
   });
@@ -1252,7 +1251,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(2)
       .subtract(76)
-      .subtract(90).ans();
+      .subtract(90);
   
     assert.equal(value, -152);
   });
@@ -1269,7 +1268,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .pow(1)
       .subtract(4)
-      .subtract(98).ans();
+      .subtract(98);
   
     assert.equal(value, 1273);
   });
@@ -1284,7 +1283,7 @@ describe('SmartCalculator', () => {
       .add(58)
       .pow(2)
       .pow(1)
-      .subtract(48).ans();
+      .subtract(48);
   
     assert.equal(value, 3286);
   });
@@ -1299,7 +1298,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(2)
       .multiply(2)
-      .add(90).ans();
+      .add(90);
   
     assert.equal(value, 107);
   });
@@ -1315,7 +1314,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .pow(2)
       .multiply(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -324);
   });
@@ -1331,7 +1330,7 @@ describe('SmartCalculator', () => {
       .subtract(54)
       .subtract(21)
       .add(93)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -73);
   });
@@ -1343,7 +1342,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(34)
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 38);
   });
@@ -1362,7 +1361,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(57)
       .pow(1)
-      .subtract(39).ans();
+      .subtract(39);
   
     assert.equal(value, -991);
   });
@@ -1381,7 +1380,7 @@ describe('SmartCalculator', () => {
       .subtract(81)
       .add(4)
       .add(18)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -88);
   });
@@ -1394,7 +1393,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(2)
       .add(25)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 629);
   });
@@ -1409,7 +1408,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(58)
       .subtract(33)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -85);
   });
@@ -1423,7 +1422,7 @@ describe('SmartCalculator', () => {
       .add(96)
       .pow(1)
       .pow(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 112);
   });
@@ -1435,7 +1434,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(31)
       .add(37)
-      .add(45).ans();
+      .add(45);
   
     assert.equal(value, 55);
   });
@@ -1446,7 +1445,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 5);
   });
@@ -1456,7 +1455,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(9);
 
     const value = calculator
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 9);
   });
@@ -1468,7 +1467,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(40)
       .multiply(2)
-      .add(85).ans();
+      .add(85);
   
     assert.equal(value, 168);
   });
@@ -1485,7 +1484,7 @@ describe('SmartCalculator', () => {
       .add(64)
       .multiply(1)
       .subtract(17)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 22);
   });
@@ -1497,7 +1496,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(1)
       .subtract(39)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -74);
   });
@@ -1514,7 +1513,7 @@ describe('SmartCalculator', () => {
       .add(9)
       .multiply(1)
       .pow(2)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 137);
   });
@@ -1532,7 +1531,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .pow(2)
       .pow(2)
-      .subtract(52).ans();
+      .subtract(52);
   
     assert.equal(value, 118);
   });
@@ -1548,7 +1547,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(98)
       .add(76)
-      .subtract(48).ans();
+      .subtract(48);
   
     assert.equal(value, 182);
   });
@@ -1567,7 +1566,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .multiply(1)
       .subtract(48)
-      .subtract(55).ans();
+      .subtract(55);
   
     assert.equal(value, -155);
   });
@@ -1578,7 +1577,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(89)
-      .subtract(78).ans();
+      .subtract(78);
   
     assert.equal(value, -163);
   });
@@ -1595,7 +1594,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(3)
       .subtract(86)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -41);
   });
@@ -1613,7 +1612,7 @@ describe('SmartCalculator', () => {
       .subtract(19)
       .subtract(50)
       .subtract(61)
-      .subtract(65).ans();
+      .subtract(65);
   
     assert.equal(value, -266);
   });
@@ -1629,7 +1628,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(1)
       .multiply(2)
-      .subtract(89).ans();
+      .subtract(89);
   
     assert.equal(value, -84);
   });
@@ -1643,7 +1642,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(16)
       .multiply(2)
-      .add(80).ans();
+      .add(80);
   
     assert.equal(value, 80);
   });
@@ -1662,7 +1661,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(71)
       .subtract(50)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 33);
   });
@@ -1679,7 +1678,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .add(4)
       .add(20)
-      .add(99).ans();
+      .add(99);
   
     assert.equal(value, -1713);
   });
@@ -1694,7 +1693,7 @@ describe('SmartCalculator', () => {
       .add(22)
       .subtract(25)
       .pow(2)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -390503);
   });
@@ -1710,7 +1709,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(27)
       .multiply(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 35);
   });
@@ -1727,7 +1726,7 @@ describe('SmartCalculator', () => {
       .add(88)
       .pow(2)
       .subtract(21)
-      .subtract(38).ans();
+      .subtract(38);
   
     assert.equal(value, 7678);
   });
@@ -1739,7 +1738,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .pow(2)
       .multiply(1)
-      .subtract(22).ans();
+      .subtract(22);
   
     assert.equal(value, 14);
   });
@@ -1758,7 +1757,7 @@ describe('SmartCalculator', () => {
       .subtract(48)
       .multiply(2)
       .add(58)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -595);
   });
@@ -1774,7 +1773,7 @@ describe('SmartCalculator', () => {
       .subtract(20)
       .pow(1)
       .pow(1)
-      .subtract(56).ans();
+      .subtract(56);
   
     assert.equal(value, 174);
   });
@@ -1792,7 +1791,7 @@ describe('SmartCalculator', () => {
       .subtract(37)
       .multiply(1)
       .multiply(1)
-      .subtract(24).ans();
+      .subtract(24);
   
     assert.equal(value, 70);
   });
@@ -1803,7 +1802,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(96)
-      .add(36).ans();
+      .add(36);
   
     assert.equal(value, 136);
   });
@@ -1813,7 +1812,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(4);
 
     const value = calculator
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 4);
   });
@@ -1824,7 +1823,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(1)
-      .subtract(93).ans();
+      .subtract(93);
   
     assert.equal(value, -87);
   });
@@ -1835,7 +1834,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(1)
-      .subtract(64).ans();
+      .subtract(64);
   
     assert.equal(value, -56);
   });
@@ -1847,7 +1846,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(67)
       .add(59)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 52);
   });
@@ -1866,7 +1865,7 @@ describe('SmartCalculator', () => {
       .add(9)
       .subtract(62)
       .subtract(82)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -123);
   });
@@ -1876,7 +1875,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(8);
 
     const value = calculator
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 64);
   });
@@ -1888,7 +1887,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(95)
       .multiply(2)
-      .subtract(81).ans();
+      .subtract(81);
   
     assert.equal(value, -269);
   });
@@ -1907,7 +1906,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .subtract(84)
       .multiply(2)
-      .subtract(43).ans();
+      .subtract(43);
   
     assert.equal(value, 26);
   });
@@ -1923,7 +1922,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(55)
       .multiply(2)
-      .subtract(96).ans();
+      .subtract(96);
   
     assert.equal(value, 62);
   });
@@ -1941,7 +1940,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(59)
       .add(21)
-      .subtract(48).ans();
+      .subtract(48);
   
     assert.equal(value, 111);
   });
@@ -1951,7 +1950,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(1);
 
     const value = calculator
-      .add(38).ans();
+      .add(38);
   
     assert.equal(value, 39);
   });
@@ -1967,7 +1966,7 @@ describe('SmartCalculator', () => {
       .add(78)
       .subtract(81)
       .multiply(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -15);
   });
@@ -1982,7 +1981,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .pow(1)
       .pow(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 156);
   });
@@ -1993,7 +1992,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(8)
-      .subtract(69).ans();
+      .subtract(69);
   
     assert.equal(value, -67);
   });
@@ -2010,7 +2009,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .subtract(28)
       .subtract(78)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -5001);
   });
@@ -2026,7 +2025,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .subtract(55)
       .subtract(92)
-      .subtract(11).ans();
+      .subtract(11);
   
     assert.equal(value, -215);
   });
@@ -2039,7 +2038,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .pow(1)
       .subtract(60)
-      .subtract(55).ans();
+      .subtract(55);
   
     assert.equal(value, -110);
   });
@@ -2052,7 +2051,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(40)
       .pow(2)
-      .subtract(20).ans();
+      .subtract(20);
   
     assert.equal(value, 1583);
   });
@@ -2064,7 +2063,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(7)
       .multiply(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -10);
   });
@@ -2078,7 +2077,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .pow(1)
       .subtract(94)
-      .add(30).ans();
+      .add(30);
   
     assert.equal(value, -149);
   });
@@ -2094,7 +2093,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(50)
       .subtract(47)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -167);
   });
@@ -2109,7 +2108,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .add(27)
       .pow(1)
-      .add(8).ans();
+      .add(8);
   
     assert.equal(value, -164);
   });
@@ -2121,7 +2120,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(61)
       .add(88)
-      .subtract(86).ans();
+      .subtract(86);
   
     assert.equal(value, -54);
   });
@@ -2132,7 +2131,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(1)
-      .add(99).ans();
+      .add(99);
   
     assert.equal(value, 107);
   });
@@ -2149,7 +2148,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(28)
       .multiply(1)
-      .subtract(15).ans();
+      .subtract(15);
   
     assert.equal(value, -100);
   });
@@ -2166,7 +2165,7 @@ describe('SmartCalculator', () => {
       .subtract(52)
       .subtract(58)
       .add(8)
-      .subtract(55).ans();
+      .subtract(55);
   
     assert.equal(value, -48);
   });
@@ -2185,7 +2184,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(2)
       .subtract(64)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -781);
   });
@@ -2198,7 +2197,7 @@ describe('SmartCalculator', () => {
       .add(36)
       .multiply(2)
       .add(33)
-      .add(49).ans();
+      .add(49);
   
     assert.equal(value, 162);
   });
@@ -2212,7 +2211,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(28)
       .multiply(1)
-      .subtract(46).ans();
+      .subtract(46);
   
     assert.equal(value, 34);
   });
@@ -2226,7 +2225,7 @@ describe('SmartCalculator', () => {
       .subtract(21)
       .pow(2)
       .multiply(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -465);
   });
@@ -2238,7 +2237,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(99)
       .add(45)
-      .add(65).ans();
+      .add(65);
   
     assert.equal(value, 219);
   });
@@ -2254,7 +2253,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(55)
       .add(61)
-      .subtract(40).ans();
+      .subtract(40);
   
     assert.equal(value, -34);
   });
@@ -2269,7 +2268,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .add(58)
       .subtract(61)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 21);
   });
@@ -2282,7 +2281,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(74)
       .pow(1)
-      .add(6).ans();
+      .add(6);
   
     assert.equal(value, -65);
   });
@@ -2298,7 +2297,7 @@ describe('SmartCalculator', () => {
       .add(55)
       .add(39)
       .subtract(86)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 43);
   });
@@ -2308,7 +2307,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(3);
 
     const value = calculator
-      .subtract(57).ans();
+      .subtract(57);
   
     assert.equal(value, -54);
   });
@@ -2324,7 +2323,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .pow(2)
       .add(15)
-      .subtract(24).ans();
+      .subtract(24);
   
     assert.equal(value, 429);
   });
@@ -2338,7 +2337,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(36)
       .multiply(1)
-      .subtract(65).ans();
+      .subtract(65);
   
     assert.equal(value, -129);
   });
@@ -2351,7 +2350,7 @@ describe('SmartCalculator', () => {
       .subtract(45)
       .subtract(44)
       .pow(1)
-      .add(4).ans();
+      .add(4);
   
     assert.equal(value, -78);
   });
@@ -2367,7 +2366,7 @@ describe('SmartCalculator', () => {
       .add(89)
       .subtract(40)
       .pow(1)
-      .add(15).ans();
+      .add(15);
   
     assert.equal(value, 21);
   });
@@ -2383,7 +2382,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(1)
       .subtract(40)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -42);
   });
@@ -2394,7 +2393,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(25)
-      .add(73).ans();
+      .add(73);
   
     assert.equal(value, 57);
   });
@@ -2407,7 +2406,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(57)
       .subtract(34)
-      .add(80).ans();
+      .add(80);
   
     assert.equal(value, 110);
   });
@@ -2421,7 +2420,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(25)
       .multiply(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 45);
   });
@@ -2432,7 +2431,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(61)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 132);
   });
@@ -2442,7 +2441,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(9);
 
     const value = calculator
-      .add(26).ans();
+      .add(26);
   
     assert.equal(value, 35);
   });
@@ -2459,7 +2458,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(32)
       .add(41)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -85);
   });
@@ -2473,7 +2472,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .pow(1)
       .add(18)
-      .add(4).ans();
+      .add(4);
   
     assert.equal(value, 34);
   });
@@ -2484,7 +2483,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .subtract(83).ans();
+      .subtract(83);
   
     assert.equal(value, -75);
   });
@@ -2503,7 +2502,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(91)
       .add(16)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -8846);
   });
@@ -2513,7 +2512,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(1);
 
     const value = calculator
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 1);
   });
@@ -2524,7 +2523,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(70)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -131);
   });
@@ -2540,7 +2539,7 @@ describe('SmartCalculator', () => {
       .add(7)
       .pow(1)
       .pow(1)
-      .subtract(26).ans();
+      .subtract(26);
   
     assert.equal(value, 47);
   });
@@ -2551,7 +2550,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(38)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -31);
   });
@@ -2570,7 +2569,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(59)
       .multiply(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -24811);
   });
@@ -2583,7 +2582,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .multiply(1)
       .subtract(52)
-      .subtract(66).ans();
+      .subtract(66);
   
     assert.equal(value, -110);
   });
@@ -2601,7 +2600,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .pow(1)
       .add(15)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 19);
   });
@@ -2611,7 +2610,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(10);
 
     const value = calculator
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 100);
   });
@@ -2630,7 +2629,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(2)
       .subtract(11)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 635);
   });
@@ -2646,7 +2645,7 @@ describe('SmartCalculator', () => {
       .subtract(74)
       .add(92)
       .subtract(71)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -5015);
   });
@@ -2663,7 +2662,7 @@ describe('SmartCalculator', () => {
       .subtract(80)
       .subtract(32)
       .subtract(21)
-      .add(4).ans();
+      .add(4);
   
     assert.equal(value, -301);
   });
@@ -2675,7 +2674,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(92)
       .pow(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -8461);
   });
@@ -2686,7 +2685,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(2)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 2);
   });
@@ -2696,7 +2695,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(9);
 
     const value = calculator
-      .subtract(55).ans();
+      .subtract(55);
   
     assert.equal(value, -46);
   });
@@ -2707,7 +2706,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(2)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 6);
   });
@@ -2726,7 +2725,7 @@ describe('SmartCalculator', () => {
       .subtract(54)
       .add(33)
       .add(17)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 480);
   });
@@ -2738,7 +2737,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(93)
       .add(78)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 251);
   });
@@ -2749,7 +2748,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(2)
-      .add(96).ans();
+      .add(96);
   
     assert.equal(value, 98);
   });
@@ -2766,7 +2765,7 @@ describe('SmartCalculator', () => {
       .subtract(50)
       .multiply(1)
       .pow(2)
-      .subtract(20).ans();
+      .subtract(20);
   
     assert.equal(value, -3);
   });
@@ -2778,7 +2777,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(18)
       .multiply(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 22);
   });
@@ -2790,7 +2789,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(2)
       .pow(2)
-      .subtract(30).ans();
+      .subtract(30);
   
     assert.equal(value, -18);
   });
@@ -2803,7 +2802,7 @@ describe('SmartCalculator', () => {
       .subtract(49)
       .pow(1)
       .multiply(2)
-      .add(11).ans();
+      .add(11);
   
     assert.equal(value, -78);
   });
@@ -2817,7 +2816,7 @@ describe('SmartCalculator', () => {
       .subtract(12)
       .pow(2)
       .pow(2)
-      .add(21).ans();
+      .add(21);
   
     assert.equal(value, -20760);
   });
@@ -2834,7 +2833,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(68)
       .subtract(92)
-      .add(27).ans();
+      .add(27);
   
     assert.equal(value, 59);
   });
@@ -2847,7 +2846,7 @@ describe('SmartCalculator', () => {
       .add(38)
       .multiply(2)
       .subtract(50)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 35);
   });
@@ -2864,7 +2863,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .add(66)
       .add(97)
-      .add(93).ans();
+      .add(93);
   
     assert.equal(value, 553);
   });
@@ -2878,7 +2877,7 @@ describe('SmartCalculator', () => {
       .subtract(99)
       .subtract(38)
       .multiply(2)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -90);
   });
@@ -2888,7 +2887,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(3);
 
     const value = calculator
-      .subtract(35).ans();
+      .subtract(35);
   
     assert.equal(value, -32);
   });
@@ -2900,7 +2899,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .pow(2)
       .add(47)
-      .add(84).ans();
+      .add(84);
   
     assert.equal(value, 140);
   });
@@ -2914,7 +2913,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .subtract(37)
       .add(77)
-      .add(47).ans();
+      .add(47);
   
     assert.equal(value, 343);
   });
@@ -2926,7 +2925,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(72)
       .subtract(79)
-      .add(33).ans();
+      .add(33);
   
     assert.equal(value, -110);
   });
@@ -2937,7 +2936,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(90)
-      .subtract(24).ans();
+      .subtract(24);
   
     assert.equal(value, 69);
   });
@@ -2949,7 +2948,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(62)
       .pow(1)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 130);
   });
@@ -2968,7 +2967,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(35)
       .multiply(1)
-      .subtract(25).ans();
+      .subtract(25);
   
     assert.equal(value, -43);
   });
@@ -2979,7 +2978,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(2)
-      .add(68).ans();
+      .add(68);
   
     assert.equal(value, 72);
   });
@@ -2989,7 +2988,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(1);
 
     const value = calculator
-      .add(46).ans();
+      .add(46);
   
     assert.equal(value, 47);
   });
@@ -3006,7 +3005,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(61)
       .pow(1)
-      .subtract(31).ans();
+      .subtract(31);
   
     assert.equal(value, 41);
   });
@@ -3018,7 +3017,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(2)
       .subtract(94)
-      .add(9).ans();
+      .add(9);
   
     assert.equal(value, -79);
   });
@@ -3028,7 +3027,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(8);
 
     const value = calculator
-      .add(31).ans();
+      .add(31);
   
     assert.equal(value, 39);
   });
@@ -3040,7 +3039,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(3)
       .add(94)
-      .subtract(13).ans();
+      .subtract(13);
   
     assert.equal(value, 93);
   });
@@ -3052,7 +3051,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(2)
       .multiply(1)
-      .subtract(25).ans();
+      .subtract(25);
   
     assert.equal(value, -7);
   });
@@ -3065,7 +3064,7 @@ describe('SmartCalculator', () => {
       .subtract(25)
       .subtract(71)
       .add(65)
-      .subtract(45).ans();
+      .subtract(45);
   
     assert.equal(value, -67);
   });
@@ -3075,7 +3074,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(6);
 
     const value = calculator
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 6);
   });
@@ -3090,7 +3089,7 @@ describe('SmartCalculator', () => {
       .add(22)
       .subtract(42)
       .multiply(1)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -1);
   });
@@ -3105,7 +3104,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .subtract(99)
       .subtract(93)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -180);
   });
@@ -3132,7 +3131,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .multiply(2)
       .add(90)
-      .subtract(13).ans();
+      .subtract(13);
   
     assert.equal(value, -293);
   });
@@ -3147,7 +3146,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .pow(2)
       .add(65)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 72);
   });
@@ -3166,7 +3165,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .multiply(2)
       .multiply(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -2691);
   });
@@ -3179,7 +3178,7 @@ describe('SmartCalculator', () => {
       .subtract(47)
       .subtract(18)
       .multiply(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -62);
   });
@@ -3197,7 +3196,7 @@ describe('SmartCalculator', () => {
       .add(54)
       .pow(2)
       .multiply(2)
-      .add(16).ans();
+      .add(16);
   
     assert.equal(value, 9012);
   });
@@ -3216,7 +3215,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .subtract(98)
       .subtract(90)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -235);
   });
@@ -3234,7 +3233,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .pow(1)
       .subtract(22)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, -15);
   });
@@ -3250,7 +3249,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(34)
       .multiply(2)
-      .subtract(71).ans();
+      .subtract(71);
   
     assert.equal(value, 53);
   });
@@ -3267,7 +3266,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .subtract(55)
       .pow(1)
-      .add(35).ans();
+      .add(35);
   
     assert.equal(value, -173);
   });
@@ -3283,7 +3282,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(85)
       .multiply(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 83);
   });
@@ -3297,7 +3296,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .subtract(59)
       .subtract(89)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -720);
   });
@@ -3314,7 +3313,7 @@ describe('SmartCalculator', () => {
       .subtract(18)
       .subtract(88)
       .pow(1)
-      .add(91).ans();
+      .add(91);
   
     assert.equal(value, -225);
   });
@@ -3329,7 +3328,7 @@ describe('SmartCalculator', () => {
       .subtract(8)
       .subtract(33)
       .multiply(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 17);
   });
@@ -3339,7 +3338,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(3);
 
     const value = calculator
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 3);
   });
@@ -3349,7 +3348,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(5);
 
     const value = calculator
-      .add(4).ans();
+      .add(4);
   
     assert.equal(value, 9);
   });
@@ -3364,7 +3363,7 @@ describe('SmartCalculator', () => {
       .subtract(67)
       .add(6)
       .add(11)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 76);
   });
@@ -3383,7 +3382,7 @@ describe('SmartCalculator', () => {
       .add(79)
       .multiply(2)
       .add(70)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -9556);
   });
@@ -3394,7 +3393,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(55)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 3029);
   });
@@ -3405,7 +3404,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 9);
   });
@@ -3422,7 +3421,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .pow(2)
       .multiply(2)
-      .add(24).ans();
+      .add(24);
   
     assert.equal(value, 232);
   });
@@ -3441,7 +3440,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(1)
       .add(34)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -202);
   });
@@ -3457,7 +3456,7 @@ describe('SmartCalculator', () => {
       .subtract(89)
       .subtract(33)
       .pow(1)
-      .add(34).ans();
+      .add(34);
   
     assert.equal(value, 115);
   });
@@ -3476,7 +3475,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(9)
       .multiply(2)
-      .add(24).ans();
+      .add(24);
   
     assert.equal(value, -78);
   });
@@ -3490,7 +3489,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .subtract(26)
       .pow(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -108);
   });
@@ -3507,7 +3506,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(83)
       .add(11)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 2814);
   });
@@ -3521,7 +3520,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(9)
       .subtract(70)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -4867);
   });
@@ -3535,7 +3534,7 @@ describe('SmartCalculator', () => {
       .add(95)
       .pow(2)
       .multiply(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 18052);
   });
@@ -3549,7 +3548,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .add(66)
       .multiply(1)
-      .add(7).ans();
+      .add(7);
   
     assert.equal(value, 83);
   });
@@ -3565,7 +3564,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .pow(1)
       .subtract(94)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -8823);
   });
@@ -3579,7 +3578,7 @@ describe('SmartCalculator', () => {
       .add(32)
       .add(64)
       .add(29)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 160);
   });
@@ -3593,7 +3592,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .pow(1)
       .subtract(30)
-      .subtract(4).ans();
+      .subtract(4);
   
     assert.equal(value, -315);
   });
@@ -3609,7 +3608,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .multiply(2)
       .pow(2)
-      .add(21).ans();
+      .add(21);
   
     assert.equal(value, -4122);
   });
@@ -3628,7 +3627,7 @@ describe('SmartCalculator', () => {
       .add(98)
       .multiply(1)
       .add(77)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 5783);
   });
@@ -3644,7 +3643,7 @@ describe('SmartCalculator', () => {
       .add(77)
       .multiply(1)
       .subtract(11)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 20);
   });
@@ -3656,7 +3655,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .add(34)
       .pow(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 40);
   });
@@ -3675,7 +3674,7 @@ describe('SmartCalculator', () => {
       .add(30)
       .subtract(38)
       .multiply(1)
-      .subtract(93).ans();
+      .subtract(93);
   
     assert.equal(value, -117);
   });
@@ -3690,7 +3689,7 @@ describe('SmartCalculator', () => {
       .subtract(28)
       .pow(2)
       .multiply(1)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -1715);
   });
@@ -3701,7 +3700,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(70)
-      .add(23).ans();
+      .add(23);
   
     assert.equal(value, -37);
   });
@@ -3712,7 +3711,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(86)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 7397);
   });
@@ -3727,7 +3726,7 @@ describe('SmartCalculator', () => {
       .add(93)
       .multiply(1)
       .multiply(1)
-      .subtract(28).ans();
+      .subtract(28);
   
     assert.equal(value, -13);
   });
@@ -3744,7 +3743,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .subtract(48)
       .subtract(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 53);
   });
@@ -3755,7 +3754,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(2)
-      .add(58).ans();
+      .add(58);
   
     assert.equal(value, 139);
   });
@@ -3767,7 +3766,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .pow(1)
       .add(75)
-      .add(5).ans();
+      .add(5);
   
     assert.equal(value, 84);
   });
@@ -3785,7 +3784,7 @@ describe('SmartCalculator', () => {
       .subtract(23)
       .add(35)
       .pow(2)
-      .add(13).ans();
+      .add(13);
   
     assert.equal(value, 1173);
   });
@@ -3802,7 +3801,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .pow(2)
       .multiply(1)
-      .subtract(9).ans();
+      .subtract(9);
   
     assert.equal(value, -67);
   });
@@ -3813,7 +3812,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(2)
-      .subtract(3).ans();
+      .subtract(3);
   
     assert.equal(value, 78);
   });
@@ -3828,7 +3827,7 @@ describe('SmartCalculator', () => {
       .add(46)
       .pow(1)
       .subtract(5)
-      .add(5).ans();
+      .add(5);
   
     assert.equal(value, -50);
   });
@@ -3846,7 +3845,7 @@ describe('SmartCalculator', () => {
       .add(8)
       .add(34)
       .add(9)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 251);
   });
@@ -3857,7 +3856,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(44)
-      .subtract(22).ans();
+      .subtract(22);
   
     assert.equal(value, 24);
   });
@@ -3872,7 +3871,7 @@ describe('SmartCalculator', () => {
       .subtract(60)
       .pow(1)
       .pow(2)
-      .add(50).ans();
+      .add(50);
   
     assert.equal(value, -2);
   });
@@ -3891,7 +3890,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .subtract(8)
       .add(26)
-      .subtract(93).ans();
+      .subtract(93);
   
     assert.equal(value, 22);
   });
@@ -3903,7 +3902,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .pow(1)
       .pow(2)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 8);
   });
@@ -3914,7 +3913,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .subtract(43)
-      .add(33).ans();
+      .add(33);
   
     assert.equal(value, -5);
   });
@@ -3925,7 +3924,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(80)
-      .add(31).ans();
+      .add(31);
   
     assert.equal(value, 113);
   });
@@ -3942,7 +3941,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .pow(1)
       .add(54)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 162);
   });
@@ -3953,7 +3952,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(50)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 2503);
   });
@@ -3970,7 +3969,7 @@ describe('SmartCalculator', () => {
       .subtract(81)
       .multiply(2)
       .add(42)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -66);
   });
@@ -3987,7 +3986,7 @@ describe('SmartCalculator', () => {
       .subtract(80)
       .pow(1)
       .subtract(22)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -62);
   });
@@ -4005,7 +4004,7 @@ describe('SmartCalculator', () => {
       .subtract(33)
       .multiply(2)
       .subtract(6)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -97);
   });
@@ -4018,7 +4017,7 @@ describe('SmartCalculator', () => {
       .add(90)
       .subtract(38)
       .add(68)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 121);
   });
@@ -4030,7 +4029,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .pow(1)
       .subtract(21)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -39);
   });
@@ -4040,7 +4039,7 @@ describe('SmartCalculator', () => {
     const calculator = new SmartCalculator(3);
 
     const value = calculator
-      .subtract(6).ans();
+      .subtract(6);
   
     assert.equal(value, -3);
   });
@@ -4057,7 +4056,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .pow(1)
       .subtract(67)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, -62);
   });
@@ -4076,7 +4075,7 @@ describe('SmartCalculator', () => {
       .add(87)
       .add(89)
       .add(27)
-      .add(52).ans();
+      .add(52);
   
     assert.equal(value, 145);
   });
@@ -4094,7 +4093,7 @@ describe('SmartCalculator', () => {
       .subtract(41)
       .add(26)
       .add(3)
-      .subtract(60).ans();
+      .subtract(60);
   
     assert.equal(value, 47);
   });
@@ -4110,7 +4109,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .add(58)
       .multiply(1)
-      .subtract(54).ans();
+      .subtract(54);
   
     assert.equal(value, 89);
   });
@@ -4129,7 +4128,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .pow(1)
       .subtract(25)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 12965);
   });
@@ -4141,7 +4140,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(54)
       .add(72)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, 94);
   });
@@ -4154,7 +4153,7 @@ describe('SmartCalculator', () => {
       .add(53)
       .subtract(74)
       .pow(1)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -17);
   });
@@ -4167,7 +4166,7 @@ describe('SmartCalculator', () => {
       .pow(1)
       .multiply(1)
       .subtract(80)
-      .multiply(2).ans();
+      .multiply(2);
   
     assert.equal(value, -151);
   });
@@ -4178,7 +4177,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .add(57)
-      .add(49).ans();
+      .add(49);
   
     assert.equal(value, 111);
   });
@@ -4191,7 +4190,7 @@ describe('SmartCalculator', () => {
       .multiply(2)
       .add(92)
       .add(81)
-      .subtract(71).ans();
+      .subtract(71);
   
     assert.equal(value, 112);
   });
@@ -4203,7 +4202,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(2)
       .subtract(60)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, -3594);
   });
@@ -4219,7 +4218,7 @@ describe('SmartCalculator', () => {
       .pow(2)
       .add(48)
       .add(15)
-      .add(75).ans();
+      .add(75);
   
     assert.equal(value, 276);
   });
@@ -4231,7 +4230,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .multiply(2)
       .pow(2)
-      .multiply(1).ans();
+      .multiply(1);
   
     assert.equal(value, 36);
   });
@@ -4242,7 +4241,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .multiply(2)
-      .pow(2).ans();
+      .pow(2);
   
     assert.equal(value, 20);
   });
@@ -4253,7 +4252,7 @@ describe('SmartCalculator', () => {
 
     const value = calculator
       .pow(1)
-      .pow(1).ans();
+      .pow(1);
   
     assert.equal(value, 4);
   });
@@ -4269,7 +4268,7 @@ describe('SmartCalculator', () => {
       .subtract(6)
       .pow(1)
       .multiply(1)
-      .subtract(74).ans();
+      .subtract(74);
   
     assert.equal(value, -129);
   });
@@ -4281,7 +4280,7 @@ describe('SmartCalculator', () => {
     const value = calculator
       .subtract(30)
       .add(59)
-      .add(42).ans();
+      .add(42);
   
     assert.equal(value, 72);
   });
@@ -4300,7 +4299,7 @@ describe('SmartCalculator', () => {
       .add(36)
       .add(70)
       .subtract(65)
-      .add(92).ans();
+      .add(92);
   
     assert.equal(value, 74);
   });
@@ -4313,7 +4312,7 @@ describe('SmartCalculator', () => {
       .multiply(1)
       .multiply(2)
       .multiply(1)
-      .add(52).ans();
+      .add(52);
   
     assert.equal(value, 66);
   });

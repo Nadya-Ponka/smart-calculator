@@ -1,58 +1,73 @@
-class SmartCalculator {
-
-  constructor(initialValue) {
+function SmartCalculator(initialValue) {
+ 
+return {  
+	initialValue: initialValue,
+	res: 0,
+	lastPow: 0,
+	lastDigit: initialValue,
+	
+  add: function(number) {
     // your implementation
-	this.initialValue = initialValue;
-	this.res=0;
-  }
-  add(number) {
-    // your implementation
+	this.lastPow=0;  
 	this.initialValue+='+'+number;
 	this.res=eval(this.initialValue);
- // console.log(this.initialValue);
- // console.log(this);
-  //console.log('res: ' + res);
-return this;
-  }
+	this.lastDigit = number;
+	return this;
+  },
   
-  subtract(number) {
-    // your implementation
+  subtract: function(number) {
+	// your implementation
+	this.lastPow=0;  
 	this.initialValue+='-'+number;
 	this.res=eval(this.initialValue);
+	this.lastDigit = number;
 	return this;
-  }
+  },
 
-  multiply(number) {
+  multiply: function(number) {
     // your implementation
+	this.lastPow=0;  
 	this.initialValue+='*'+number;
 	this.res=eval(this.initialValue);
+	this.lastDigit = number;
 	return this;
-  }
+  },
 
-  devide(number) {
+  devide: function(number) {
     // your implementation
-	
-	this.initialValue+='\/'+number;
+	this.lastPow=0;  
+	this.initialValue+='/'+number;
 	this.res=eval(this.initialValue);
+	this.lastDigit = number;
 	return this;
-  }
+  },
 
-  pow(number) {
+  pow: function(number) {
     // your implementation
-	//console.log(this.initialValue);
-	this.res=eval(this.initialValue);
-
-	this.initialValue='Math.pow('+this.res+','+number+')';
-		//console.log(this.initialValue);
-
-	this.res=eval(this.initialValue);
+	if (!this.lastPow) {
+	var restxt = this.initialValue.toString();
+	var lastid = restxt.lastIndexOf(this.lastDigit);
+	this.initialValue=restxt.substring(0,lastid); 
+	this.initialValue=this.initialValue + 'Math.pow(' + this.lastDigit + ',' + number + ')';
+	this.lastDigit = number;
+	this.lastPow++;
+	this.res=this.initialValue;
+	} else {
+	var regex1 = /[,](\d+)[)+]$/;
+	this.initialValue = this.initialValue.replace(regex1, ', Math.pow(' + this.lastDigit + ',' + number + '))');
+	this.lastPow++;
+	this.res=this.initialValue;
+	}
 	return this;
-  }
+  },
   
-  ans() {
-  return this.res;
-}
+  valueOf: function(){
+        return Number(eval(this.res));
+  },
+  toString: this.valueOf
 }
 
+
+}
 
 module.exports = SmartCalculator;
